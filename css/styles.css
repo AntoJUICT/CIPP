@@ -10,6 +10,57 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+/*!
+ * Custom JUICT Style
+ */
+
+ .sidenav-menu-heading {
+    padding: 1.75rem 1rem 0.75rem;
+    font-size: 0.7rem !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.07em !important;
+    color: #133150 !important;
+    font-family: 'Bungee',cursive;
+}
+
+small fw-bold text-info mb-1 {}
+
+text-info {
+    color: #133150 !important;
+}
+
+.small.fw-bold.text-info.mb-1 {
+    color: #133150 !important;
+    font-family: 'Bungee',cursive;
+    font-size: 10px;
+}
+
+a.nav-link.active {
+    font-family: 'Bungee',cursive;
+    letter-spacing: 0px;
+}
+
+p {font-family: 'Source Sans Pro',sans-serif;}
+
+h1.mb-0 {
+    font-family: 'Bungee',cursive;
+    color: #db3a45;
+    margin-left: 3%;
+}
+
+#bodycontent {
+}
+
+main {
+    background: #f3f3f3;
+}
+
+/*!
+ * End Custom JUICT Style
+ */
+
 :root {
   --bs-blue: #db3a45;
   --bs-indigo: #5800e8;
