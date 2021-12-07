@@ -57,6 +57,13 @@ h1.mb-0 {
     border-color: #133150 !important;
 }
 
+.btn-primary:focus {
+    color: #fff;
+    background-color: #133150 !important;
+    border-color: #133150 !important;
+    box-shadow: none !important;
+}
+
 .btn-secondary {
   background-color: #db3a45 !important;
   border-color: #db3a45 !important;
@@ -70,6 +77,10 @@ h1.mb-0 {
 .btn-secondary:active {
     background-color: #133150 !important;
     border-color: #133150 !important;
+}
+
+.btn-secondary:focus {
+    box-shadow: none !important;
 }
 
 a:hover.dt-center {
