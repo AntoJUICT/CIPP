@@ -57,20 +57,26 @@ h1.mb-0 {
     border-color: #133150 !important;
 }
 
-a:hover.dt-center {
-    color: #133150 !important;
-}
-
 .btn-secondary {
-  color: #fff;
-  background-color: #db3a45;
-  border-color: #db3a45;
+  background-color: #db3a45 !important;
+  border-color: #db3a45 !important;
 }
 
 .btn-secondary:hover {
     background-color: #133150 !important;
     border-color: #133150 !important;
 }
+
+.btn-secondary:active {
+    background-color: #133150 !important;
+    border-color: #133150 !important;
+}
+
+a:hover.dt-center {
+    color: #133150 !important;
+}
+
+
 
 .text-primary {
     color: #db3a45 !important;
