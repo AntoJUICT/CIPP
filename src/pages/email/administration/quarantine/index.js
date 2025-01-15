@@ -1,7 +1,7 @@
 import { Layout as DashboardLayout } from "/src/layouts/index.js";
 import { CippTablePage } from "/src/components/CippComponents/CippTablePage.jsx";
 import { useEffect, useState } from "react";
-import { Dialog, DialogTitle, DialogContent, IconButton, Skeleton, Typography, CircularProgress } from "@mui/material";
+import { Dialog, DialogTitle, DialogContent, IconButton, Skeleton } from "@mui/material";
 import { Block, Close, Done, DoneAll, Subject } from "@mui/icons-material";
 import { CippMessageViewer } from "/src/components/CippComponents/CippMessageViewer.jsx";
 import { ApiGetCall, ApiPostCall } from "/src/api/ApiCall";
@@ -96,7 +96,8 @@ const Page = () => {
       type: "POST",
       url: "/api/ExecQuarantineManagement",
       data: {
-        Identity: "Identity",
+        TenantFilter: "TenantFilter",
+        ID: "id",
         Type: "Release",
       },
       confirmText: "Are you sure you want to release this message?",
@@ -107,7 +108,8 @@ const Page = () => {
       type: "POST",
       url: "/api/ExecQuarantineManagement",
       data: {
-        Identity: "Identity",
+        TenantFilter: "TenantFilter",
+        ID: "id",
         Type: "Deny",
       },
       confirmText: "Are you sure you want to deny this message?",
@@ -118,7 +120,8 @@ const Page = () => {
       type: "POST",
       url: "/api/ExecQuarantineManagement",
       data: {
-        Identity: "Identity",
+        TenantFilter: "TenantFilter",
+        ID: "id",
         Type: "Release",
         AllowSender: true,
       },
